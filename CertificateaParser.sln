@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateaParser", "CertificateaParser\CertificateaParser.csproj", "{8C57A747-BEEB-4073-8E2F-E91FE77356FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C57A747-BEEB-4073-8E2F-E91FE77356FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C57A747-BEEB-4073-8E2F-E91FE77356FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C57A747-BEEB-4073-8E2F-E91FE77356FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C57A747-BEEB-4073-8E2F-E91FE77356FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29B59637-755E-4897-BBE9-ED6794E8E3D2}
+	EndGlobalSection
+EndGlobal

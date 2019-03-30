@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "UploadFile";
+}
+<h2>Upload Certificate</h2>
+<form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="UploadFile">
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Upload one or more files using this form:</p>
+            <input class="hidden" id="file" type="file" name="file" multiple />
+            <input type="button" id="btn" class="btn btn-default" value="Выбрать файл" />
+        </div>
+    </div>
+    <br/>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input class="btn btn-primary" type="submit" value="Upload" />
+        </div>
+    </div>
+</form>
+<br />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(() => {
+        $('#btn').click(() => {
+            $('#file').trigger('click');
+        });
+    })
+</script>

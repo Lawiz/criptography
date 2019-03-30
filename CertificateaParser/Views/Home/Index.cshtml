@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model System.Security.Cryptography.X509Certificates.X509Certificate2
+<br/>
+<h2>Файл</h2>
+<div class="row">
+    <br/>
+    <br/>
+<form asp-action="Index"method="post">
+    <div class="form-group">
+        <label asp-for="Archived">Archived</label>
+        <input asp-for="Archived" type="text" class="form-control" id="Archived" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Extensions">
+            Extensions
+        </label>
+        <input asp-for="Extensions" type="text" class="form-control" id="Extensions" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FriendlyName">
+            FriendlyName
+        </label>
+        <input asp-for="FriendlyName" value="@Model?.PublicKey.Oid.FriendlyName" type="text" class="form-control" id="FriendlyName" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Handle">
+            Handle
+        </label>
+        <input asp-for="Handle" type="text" class="form-control" id="Handle" />
+    </div>
+    <div class="form-group">
+        <label asp-for="HasPrivateKey">
+            HasPrivateKey
+        </label>
+        <input asp-for="HasPrivateKey" type="text" class="form-control" id="HasPrivateKey" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Issuer">
+            Issuer
+        </label>
+        <input asp-for="Issuer" type="text" class="form-control" id="Issuer" />
+    </div>
+    <div class="form-group">
+        <label asp-for="IssuerName">
+            IssuerName
+        </label>
+        <input asp-for="IssuerName.Name" type="text" class="form-control" id="IssuerName" />
+    </div>
+    <div class="form-group">
+        <label asp-for="NotAfter">
+        </label>
+        <input asp-for="NotAfter" type="text" class="form-control" id="NotAfter" />
+    </div>
+    <div class="form-group">
+        <label asp-for="NotBefore">
+        </label>
+        <input asp-for="NotBefore" type="text" class="form-control" id="NotBefore" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PrivateKey">
+        </label>
+        <input asp-for="PrivateKey" type="text" class="form-control" id="PrivateKey" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PublicKey">
+        </label>
+        <input asp-for="PublicKey.EncodedKeyValue" value="@Model?.PublicKey.EncodedKeyValue.Format(true)" type="text" class="form-control" id="PublicKey" />
+    </div>
+    <div class="form-group">
+        <label asp-for="RawData">
+        </label>
+        <input asp-for="RawData.SyncRoot" value="@Model?.RawData.Length" type="text" class="form-control" id="RawData" />
+    </div>
+    <div class="form-group">
+        <label asp-for="SerialNumber">
+        </label>
+        <input asp-for="SerialNumber" type="text" class="form-control" id="SerialNumber" />
+    </div>
+    <div class="form-group">
+        <label asp-for="SignatureAlgorithm">
+        </label>
+        <input asp-for="SignatureAlgorithm.Value" type="text" class="form-control" id="SignatureAlgoritm" />
+    </div>
+    <div class="form-group">
+        <label asp-for="SubjectName">
+        </label>
+        <input asp-for="SubjectName.Name" type="text" class="form-control" id="SubjectName" />
+    </div>
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+</form>
+</div>
